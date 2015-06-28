@@ -1,0 +1,30 @@
+#!/usr/bin/env node
+var debug = require('debug')('kau2');
+var app = require('../app');
+app.set('port', process.env.PORT || 3000);
+
+
+// var db = app.get('db');
+// db.once('open', function() {
+// TagCategory.find(function(err, data){console.log(data);});
+// });
+
+
+var loadTagCategories = function(){		
+	deferred = q.defer();
+	var obj;
+	fs.readFile('../data/tag-category.json', 'utf8', function (err, data) {
+	  if (err) 
+		  deferred.error(err);
+	  else{
+		  tagCategories = JSON.parse(data);
+		  deferred.resolve(tagCategories);
+	  }
+	});
+	return deferred.promise;
+};	
+
+
+var server = app.listen(app.get('port'), function() {
+	  debug('Express server listening on port ' + server.address().port);
+	});

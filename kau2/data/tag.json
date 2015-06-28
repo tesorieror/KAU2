@@ -1,0 +1,23 @@
+[
+{"name":"PU","description":"Public Universities","category":"IT"},
+{"name":"PUC","description":"Private Universities and Colleges","category":"IT"},
+{"name":"OI","description":"Other Institutions in Higher Education","category":"IT"},
+{"name":"TO","description":"All Institutions","category":"IT"},
+{"name":"DA","description":"Diploma Average","category":"GR"},
+{"name":"BA","description":"Bachelor","category":"GR"},
+{"name":"HD","description":"Higher Diploma","category":"GR"},
+{"name":"MA","description":"Master","category":"GR"},
+{"name":"FE","description":"Fellowship","category":"GR"},
+{"name":"DO","description":"Doctorate","category":"GR"},
+{"name":"TO","description":"Total","category":"GR"},
+{"name":"MA","description":"Male","category":"GE"},
+{"name":"FE","description":"Female","category":"GE"},
+{"name":"TO","description":"Total","category":"GE"},
+{"name":"SA","description":"Saudi","category":"NA"},
+{"name":"NS","description":"Non-Saudi","category":"NA"},
+{"name":"TO","description":"Total","category":"NA"},
+{"name":"FR","description":"Freshmen","category":"SS"},
+{"name":"EN","description":"Enrolled","category":"SS"},
+{"name":"GR","description":"Graduates of Previous Years","category":"SS"},
+{"name":"1434-1435","description":"Year 1434-1435","category":"YR"}
+]

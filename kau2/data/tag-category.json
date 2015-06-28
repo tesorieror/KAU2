@@ -1,0 +1,6 @@
+[{"name":"IT","description":"Institution Type"},
+{"name":"GR","description":"Public Universities"},
+{"name":"GE","description":"Private Universities and Colleges"},
+{"name":"NA","description":"Other Institutions in Higher Education"},
+{"name":"SS","description":"All Institutions"},
+{"name":"YR","description":"Year"}]
