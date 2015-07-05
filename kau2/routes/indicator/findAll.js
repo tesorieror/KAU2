@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var path = require('path');
+var _ = require('underscore');
 
 var qu = require(path.join(__dirname, '../qu'));
 var Indicator = require(path.join(__dirname, '../../model/indicator'));

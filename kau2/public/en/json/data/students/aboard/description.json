@@ -1,0 +1,85 @@
+{"Gender":{"Male":{
+		"title" : "Aboard Students (Males)",
+		"category" : "Students",
+		"subcategory" : "Aboard",
+		"objective" : "Total number of Aboard Male Students in tertiary programmes (ISCED 5A or 5B) regardless of age, in a given school year,  in all private and public educational institutions"
+	},"Female":{
+		"title" : "Aboard Students (Females)",
+		"category" : "Students",
+		"subcategory" : "Aboard",
+		"objective" : "Total number of Aboard Female Students in tertiary programmes (ISCED 5A or 5B) regardless of age, in a given school year,  in all private and public educational institutions"
+	},"Total":{
+		"title" : "Total Aboard Students",
+		"category" : "Students",
+		"subcategory" : "Aboard",
+		"objective" : "Total number of Aboard Students  in tertiary programmes (ISCED 5A or 5B) regardless of age, in a given school year,  in all private and public educational institutions"
+	}},
+	"Nationality":{
+		"Saudi":{"Male":{
+			"title" : "Aboard Students (Saudi Males)",
+			"category" : "Students",
+			"subcategory" : "Aboard",
+			"objective" : "Total number of Saudi Males Aboard Students in tertiary programmes (ISCED 5A or 5B) regardless of age, in a given school year,  in all private and public educational institutions"
+		},"Female":{
+			"title" : "Total Aboard Students (Saudi Females)",
+			"category" : "Students",
+			"subcategory" : "Aboard",
+			"objective" : "Total number of Saudi Female Aboard Students in tertiary programmes (ISCED 5A or 5B) regardless of age, in a given school year,  in all private and public educational institutions"
+		},"Total":{
+			"title" : "Total Aboard Students (Saudi)",
+			"category" : "Students",
+			"subcategory" : "Aboard",
+			"objective" : "Total number of Saudi Aboard Students in tertiary programmes (ISCED 5A or 5B) regardless of age, in a given school year,  in all private and public educational institutions"
+		}},	
+		"Non-Saudi":{"Male":{
+			"title" : "Aboard Students (Non-saudi Males)",
+			"category" : "Students",
+			"subcategory" : "Aboard",
+			"objective" : "Total number of Aboard Non-saudi Male Students in tertiary programmes (ISCED 5A or 5B) regardless of age, in a given school year,  in all private and public educational institutions"
+		},"Female":{
+			"title" : "Total Aboard Students (Non-saudi Females)",
+			"category" : "Students",
+			"subcategory" : "Aboard",
+			"objective" : "Total number of Aboard  Non-saudi Female Students in tertiary programmes (ISCED 5A or 5B) regardless of age, in a given school year,  in all private and public educational institutions"
+		},"Total":{
+			"title" : "Total Aboard Students (Non-saudi)",
+			"category" : "Students",
+			"subcategory" : "Aboard",
+			"objective" : "Total number of Aboard Non-saudi Students in tertiary programmes (ISCED 5A or 5B) regardless of age, in a given school year,  in all private and public educational institutions"
+		}}
+	},
+	"Degree":{
+		"Diploma":{"Male":{
+			"title" : "Male Aboard Students (Diploma)",
+			"category" : "Students",
+			"subcategory" : "Aboard",
+			"objective" : "Number of Aboard Male Students in Diploma programmes, regardless of age, in a given school year,  in all private and public educational institutions"
+		},"Female":{
+			"title" : "Female Aboard Students (Diploma)",
+			"category" : "Students",
+			"subcategory" : "Aboard",
+			"objective" : "Number of Aboard Female Students in Diploma programmes, regardless of age, in a given school year,  in all private and public educational institutions"
+		},"Total":{
+			"title" : "Total Aboard Students (Diploma)",
+			"category" : "Students",
+			"subcategory" : "Aboard",
+			"objective" : "Total number of Aboard in Diploma programmes, regardless of age, in a given school year,  in all private and public educational institutions"
+		}},	
+		"Bachelore":{"Male":{
+			"title" : "Male Aboard Students (Bachelore)",
+			"category" : "Students",
+			"subcategory" : "Aboard",
+			"objective" : "Number of Aboard Male Students in Bachelore programmes, regardless of age, in a given school year,  in all private and public educational institutions"
+		},"Female":{
+			"title" : "Female Aboard Students (Bachelore)",
+			"category" : "Students",
+			"subcategory" : "Aboard",
+			"objective" : "Number of Aboard Female Students in Bachelore programmes, regardless of age, in a given school year,  in all private and public educational institutions"
+		},"Total":{
+			"title" : "Total Aboard Students (Bachelore)",
+			"category" : "Students",
+			"subcategory" : "Aboard",
+			"objective" : "Total number of Aboard to Bachelore programmes, regardless of age, in a given school year,  in all private and public educational institutions"
+		}}
+	}
+}     

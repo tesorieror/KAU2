@@ -1,0 +1,50 @@
+<div class="row">
+	<div class="col-xs-12">
+		<div ng-include="'./pages/main-nav.html'"></div>
+	</div>
+</div>
+<div class="row indicator">
+	<div class="col-xs-12">
+		<h2>{{title}}</h2>
+	</div>
+</div>
+<div class="row">
+	<div class="col-xs-12">
+		<div class="panel panel-default kau-panel">
+			<div class="panel-header">
+				<div class="kau-filter-accordeon">
+					<accordion> <accordion-group is-open="filterStatus.open" ng-click="accordionClicked()" > <accordion-heading>
+					Filter <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': filterStatus.open, 'glyphicon-chevron-right': !filterStatus.open}"></i> </accordion-heading>
+					<dl>
+						<span ng-repeat="catName in tagCategoryNames">
+							<dt>{{tagCategories[catName].description}}</dt>
+							<dd>
+								<div class="btn-group">
+									<label ng-repeat="tag in tags[catName] | filter:{_category:tagCategories[catName]._id} | orderBy: '+order'" class="btn btn-default btn-xs"
+										ng-model="tagModel[catName][tag._id]" btn-checkbox
+									>{{tag.description}}</label>
+								</div>
+							</dd>
+						</span>
+					</dl>
+					</accordion-group></accordion>
+				</div>
+			</div>
+			<div class="panel-body">
+				<div class="row">
+					<div class="col-xs-12">
+					<!-- 
+						<div ng-repeat="tagName in tagCategoryNames" ng-show="!filterStatus.open">
+							<p data-ng-repeat="tag in getSelectedTags()[tagName]">{{tag.description}}</p>
+							<hr />
+						</div>
+						-->
+						<div google-chart chart="chart" on-ready="chartReady(chartWrapper)" on-select="chartSelectedItem(selectedItems, selectedItem, chartWrapper)"
+							on-click="chartClicked(chart)" style="width: 700px; height: 450px;"
+						></div> 
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

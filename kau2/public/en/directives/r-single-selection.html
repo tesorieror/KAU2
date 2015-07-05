@@ -1,0 +1,28 @@
+<form class="r-single-selection">
+	<form class="form-inline">
+		<div class="form-group form-group-sm">
+			<div class="btn-toobar" role="toolbar">
+				<input class="input-sm r-single-selection-filter" type="text"
+					ng-model="filterString" placeholder="Filter" size="10"
+				/>
+				<div class="btn-group">
+					<button class=" btn btn-default btn-sm pull-right" ng-click="clearFilterString()">
+						<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</form>
+	<div class="form-group form-group-sm r-single-selection-container"
+		style="margin-bottom: 2px;"
+	>
+		<div class="form-group form-group-sm"
+			ng-repeat="item in items|filter:{name:filterString}"
+		>
+			<label> <input type="radio" ng-model="selection[0]"
+				ng-change="changed({item:[item]})" ng-value="item"
+			> {{item[label]}}
+			</label>
+		</div>
+	</div>
+</form>

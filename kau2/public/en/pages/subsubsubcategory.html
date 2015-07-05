@@ -1,0 +1,78 @@
+<div class="row">
+	<div class="col-xs-12">
+		<div ng-include="'./pages/main-nav.html'"></div>
+	</div>
+</div>
+<div class="row data">
+	<div class="col-xs-12">
+		<h2>{{title}}</h2>
+	</div>
+</div>
+<div class="row">
+	<div class="col-xs-12">
+		<ul class="nav nav-tabs kau">
+			<li ng-repeat="subcat in subcategories" role="presentation" ng-class="{active : subcat == subcategory}">
+				<a href="{{subcat.href}}">{{subcat.name}}</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="row">
+	<div class="col-xs-12">
+		<div class="panel panel-default kau-panel">
+			<div class="panel-header">
+				<ul class="nav nav-pills">
+					<li role="presentation" ng-repeat="subcat in subsubcategories" ng-class="{active : subcat == subsubcategory}">
+						<a href="{{subcat.href}}">{{subcat.name}}</a>
+					</li>
+				</ul>
+			</div>
+			<div class="panel-header">
+				<ul class="nav nav-pills kau2">
+					<li role="presentation" ng-repeat="subcat in subsubsubcategories" ng-class="{active : subcat == subsubsubcategory}">
+						<a href="{{subcat.href}}">{{subcat.name}}</a>
+					</li>
+				</ul>
+			</div>
+			<!--  style="background-color: rgb(200, 245, 200);" -->
+			<div class="panel-header">
+				<div class="kau-check">
+					<div ng-repeat="subcat in subsubsubsubcategories">
+						<input type="checkbox" ng-change="refreshChart()" ng-model="filter[subcat.name]"> {{subcat.name}}
+					</div>
+				</div>
+			</div>
+			<div class="panel-header">
+				<form class="form-inline kau">
+					<div class="form-group form-group-sm">
+						<label for="fromYear">From&nbsp;</label> <select ng-model="from" class="form-control" id="fromYear" ng-change="refreshChart()"
+							ng-options="yr as yr for yr in years | filterFromYears: to"
+						>
+						</select>
+					</div>
+					<div class="form-group form-group-sm">
+						<label for="toYear">To&nbsp;</label> <select ng-model="to" id="toYear" class="form-control" ng-change="refreshChart()"
+							ng-options="yr for yr in years | filterToYears: from"
+						>
+						</select>
+					</div>
+					<div class="form-group form-group-sm">
+						<label for="chartType">Chart Type&nbsp;</label> <select ng-model="chartType" id="chartType" class="form-control" ng-change="refreshChart()"
+							ng-options="chType.name for chType in chartTypes"
+						>
+						</select>
+					</div>
+				</form>
+			</div>
+			<div class="panel-body">
+				<div class="row">
+					<div class="col-xs-12">
+						<div google-chart chart="chart" on-ready="chartReady(chartWrapper)" on-select="chartSelectedItem(selectedItem)" on-click="chartClicked(chart)"
+							style="width: 700px; height: 450px;" data-ng-show="!isFilterEmpty()"
+						></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,37 @@
+<form class="r-multiple-selection">
+	<form class="form-inline">
+		<div class="form-group form-group-sm">
+			<div class="btn-toobar" role="toolbar">
+				<input class="input-sm r-multiple-selection-filter " type="text"
+					ng-model="filterString" placeholder="Filter" size="10"
+				/>
+				<div class="btn-group">
+					<button class=" btn btn-default btn-sm " ng-click="clearFilterString()">
+						<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</form>
+	<div class="form-group form-group-sm r-multiple-selection-container"
+		style="margin-bottom: 2px;"
+	>
+		<div class="form-group form-group-sm"
+			ng-repeat="item in items|filter:{name:filterString}"
+		>
+			<label> <input type="checkbox"
+				ng-model="selection[items.indexOf(item)]" ng-change="changed({item:[item]})"
+				ng-true-value="{{item}}" ng-false-value="null"
+			> {{item[label]}}
+			</label>
+		</div>
+	</div>
+	<div class="btn-group">
+		<button class=" btn btn-default btn-sm " ng-click="selectAll()">
+			<span class="glyphicon glyphicon-check" aria-hidden="true"></span>
+		</button>
+		<button class=" btn btn-default btn-sm " ng-click="deselectAll()">
+			<span class="glyphicon glyphicon-unchecked" aria-hidden="true"></span>
+		</button>
+	</div>
+</form>

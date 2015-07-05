@@ -1,0 +1,17 @@
+<div data-ng-controller="RDateFromToCtrl">
+	<div class="form-group form-group-sm">
+		<label for="fromYear">From&nbsp;</label> <select
+			data-ng-model="periodService.from" class="form-control" id="fromYear"
+			data-ng-change="periodService.update(); fromChange()"
+			data-ng-options="yr for yr in periodService.years | filterFromYears: periodService.to">
+		</select>
+	</div>
+
+	<div class="form-group form-group-sm">
+		<label for="toYear">To&nbsp;</label> <select
+			data-ng-model="periodService.to" id="toYear" class="form-control"
+			data-ng-change="periodService.update(); toChange()"
+			data-ng-options="yr for yr in periodService.years | filterToYears: periodService.from">
+		</select>
+	</div>
+</div>

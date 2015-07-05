@@ -1,0 +1,47 @@
+
+<span ng-controller="FreshmenCtrl">
+	<div class="row freshmen">
+		<div class="col-xs-12">
+			<h2>
+				<span ng-bind="title"></span>
+			</h2>
+			<hr/>
+		</div>
+	</div>
+	<div class="row freshmen">
+		<div class="col-xs-4">
+			<r-pie chart="charts['nationalityPie']"></r-pie>
+		</div>
+		<div class="col-xs-4">
+			<r-pie chart="charts['degreePie']"></r-pie>
+		</div>
+		<div class="col-xs-4">
+			<r-pie chart="charts['genderPie']"></r-pie>
+		</div>
+	</div>
+
+	<div class="row freshmen">
+		<div class="col-xs-4">
+			<r-pie chart="charts['saudiGenderPie']"></r-pie>
+		</div>
+		<div class="col-xs-4">
+			<r-pie chart="charts['bacheloreGenderPie']"></r-pie>
+		</div>
+		<div class="col-xs-4">&nbsp;</div>
+	</div>
+
+	<div class="row  freshmen">
+		<div class="col-xs-4">
+			<r-pie chart="charts['nonSaudiGenderPie']"></r-pie>
+		</div>
+		<div class="col-xs-4">
+			<r-pie chart="charts['diplomaGenderPie']"></r-pie>
+		</div>
+		<div class="col-xs-4">&nbsp;</div>
+	</div>
+
+	<div class="row  freshmen" style="height: 300px;">
+		<div class="col-xs-12"></div>
+	</div>
+
+</span>

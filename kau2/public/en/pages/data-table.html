@@ -1,0 +1,25 @@
+<span ng-controller="DataTableCtrl">
+	<div class="row data-table">
+		<div class="col-xs-12">
+			<h2>{{indicator.category}}&nbsp;{{indicator.subcategory}}</h2>
+			<hr />
+		</div>
+	</div>
+	<div class="row data-table">
+		<div class="col-xs-12">
+			<div google-chart chart="tableChart" style="width: 100%; height: 100%;"></div>
+		</div>
+	</div>
+	<div class="row data-table">
+		<div class="col-xs-12">
+			<accordion> <accordion-group is-open="accordionStatus.period">
+			<accordion-heading> Period <i
+				class="pull-right glyphicon"
+				ng-class="{'glyphicon-chevron-down': accordionStatus.period, 'glyphicon-chevron-right': !accordionStatus.period}"
+			></i> </accordion-heading> <r-date-from-to period="period" from-change="updateChart()"
+				to-change="updateChart()"
+			></r-date-from-to> </accordion-group> </accordion>
+		</div>
+	</div>
+
+</span>

@@ -1,0 +1,90 @@
+<div class="row">
+	<div class="col-xs-12">
+		<div ng-include="'./pages/main-nav.html'"></div>
+	</div>
+</div>
+<div class="row data">
+	<div class="col-xs-12">
+		<h2>{{title}}</h2>
+	</div>
+</div>
+<div class="row">
+	<div class="col-xs-12">
+		<ul class="nav nav-tabs kau">
+			<li ng-repeat="subcat in subcategories" role="presentation" data-ng-class="{active : subcat == subcategory}">
+				<a href="{{subcat.href}}">{{subcat.title==null?subcat.name:subcat.title}}</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="row">
+	<div class="col-xs-12">
+		<div class="panel panel-default kau-panel">
+			<div class="panel-header">
+				<ul class="nav nav-pills">
+					<li role="presentation" data-ng-repeat="subcat in subsubcategories" data-ng-class="{active : subcat == subsubcategory}">
+						<a href="{{subcat.href}}">{{subcat.title==null?subcat.name:subcat.title}}</a>
+					</li>
+				</ul>
+			</div>
+			<!--  
+			<div class="panel-header">
+				<div class="kau-check">
+					<div ng-repeat="subcat in subsubsubcategories">
+						<input type="checkbox" ng-change="refreshChart()" ng-model="filter[subcat.name]"> {{subcat.name}}
+					</div>
+				</div>
+			</div>
+			-->
+			<div class="kau-filter-accordeon">
+				<accordion> <accordion-group is-open="filterStatus.open"> <accordion-heading>
+				<div class="btn-group btn-group-xs" role="group">
+					<button type="button" class="btn btn-default" ng-click="filterSelectAll();">
+						<span class="glyphicon glyphicon-check" aria-hidden="true"></span>
+					</button>
+					<button type="button" class="btn btn-default" ng-click="filterUnselectAll();">
+						<span class="glyphicon glyphicon-unchecked" aria-hidden="true"></span>
+					</button>
+				</div>
+				Filter <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-down': filterStatus.open, 'glyphicon-chevron-right': !filterStatus.open}"></i> </accordion-heading>
+				<div class="kau-check-accordeon">
+					<div ng-repeat="subcat in subsubsubcategories">
+						<input type="checkbox" ng-change="refreshChart()" ng-model="filter[subcat.name]"> {{subcat.name}}
+					</div>
+				</div>
+				</accordion-group></accordion>
+			</div>
+			<div class="panel-header">
+				<form class="form-inline kau">
+					<div class="form-group form-group-sm">
+						<label for="fromYear">From&nbsp;</label> <select data-ng-model="from" class="form-control" id="fromYear" data-ng-change="refreshChart()"
+							data-ng-options="yr as yr for yr in years | filterFromYears: to"
+						>
+						</select>
+					</div>
+					<div class="form-group form-group-sm">
+						<label for="toYear">To&nbsp;</label> <select data-ng-model="to" id="toYear" class="form-control" data-ng-change="refreshChart()"
+							data-ng-options="yr for yr in years | filterToYears: from"
+						>
+						</select>
+					</div>
+					<div class="form-group form-group-sm">
+						<label for="chartType">Chart Type&nbsp;</label> <select data-ng-model="chartType" id="chartType" class="form-control" data-ng-change="refreshChart()"
+							data-ng-options="chType.name for chType in chartTypes"
+						>
+						</select>
+					</div>
+				</form>
+			</div>
+			<div class="panel-body">
+				<div class="row">
+					<div class="col-xs-12">
+						<div google-chart chart="chart" on-ready="chartReady(chartWrapper)" on-select="chartSelectedItem(selectedItems, selectedItem, chartWrapper)" on-click="chartClicked(chart)"
+							style="width: 700px; height: 450px;" data-ng-show="!isFilterEmpty()"
+						></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

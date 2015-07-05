@@ -10,7 +10,8 @@ var TagCategory;
 
 var schema = mongoose.Schema({
 	name : String,
-	description : String
+	description : String,
+	order: Number
 });
 
 schema.statics.promRemoveAll = function() {

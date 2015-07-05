@@ -1,0 +1,63 @@
+
+<div class="row students">
+	<div class="col-xs-12">
+		<h2>STUDENTS</h2>
+		<hr />
+	</div>
+</div>
+
+<div class="row ">
+	<div class="col-xs-12">
+		<form>
+			<div class="form-group btn-group">
+				<div>
+					<label class="btn btn-default" ng-model="categoryPathSelection"
+						ng-click="categoryPathClicked(c); updateChart()" ng-repeat="c in categoryPath"
+						btn-radio="c">{{c.name}}</label>
+				</div>
+				<div>
+					<label class="btn btn-default" ng-model="subcategorySelection"
+						ng-click="subcategoryClicked(c); updateChart()" ng-repeat="c in subcategories"
+						btn-radio="c">{{c.name}}</label>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+
+<div class="row ">
+	<div class="col-xs-12">
+		<form class="form-inline panel panel-default" style="padding: 5px;">
+			<div class="form-group form-group-sm">
+				<r-date-from-to period="period" years="years" from-change="updateChart()"
+					to-change="updateChart()"></r-date-from-to>
+			</div>
+		</form>
+	</div>
+</div>
+
+<div class="row " ng-show="categoryPath.length>1">
+	<div class="col-xs-12">
+		<div class="panel panel-default">
+			<div class="panel-heading">Data</div>
+			<div class="panel-body">
+				<div class="row">
+					<div class="col-xs-12">
+						<form>
+							<div class="form-group">
+								<label>Search </label> <input class="form-control input-sm"
+									type="text" ng-model="searchString" placeholder="Filter"
+									ng-change="updateChart()" />
+							</div>
+							<div class="form-group">
+								<div google-chart chart="chart"
+									style="width: 100%; height: 100%;"></div>
+							</div>
+						</form>
+						<br />
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

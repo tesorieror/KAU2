@@ -1,0 +1,14 @@
+div.indicator div h2 {
+	font-family: 'Lato', sans-serif;
+	font-style: bold;
+	font-weight: 900;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	/*color: rgb(51, 122, 183);*/
+	color: #fff;/*#060*/
+	text-align: center;
+}
+
+div.indicator div {
+	background-color: #060;
+}

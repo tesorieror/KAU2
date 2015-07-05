@@ -1,0 +1,97 @@
+
+<div class="row">
+	<div class="col-xs-12">
+		<button type="button" class="close" ng-click="back()"
+			style="font-size: 4em;">
+			<span>&times;</span>
+		</button>
+	</div>
+</div>
+
+<div class="row description">
+	<div class="col-xs-12">
+		<h2>
+			<span ng-bind="title"></span>
+		</h2>
+	</div>
+</div>
+
+
+<div class="row description">
+	<div class="col-xs-12">
+		<hr />
+		<dl class="dl-horizontal">
+			<div ng-show="description.category">
+				<dt>Category</dt>
+				<dd>{{description.category}}</dd>
+				<br />
+			</div>
+			<div ng-show="description.subcategory">
+				<dt>Subcategory</dt>
+				<dd>{{description.subcategory}}</dd>
+				<br />
+			</div>
+			<div ng-show="description.subsubcategory">
+				<dt>Subsubcategory</dt>
+				<dd>{{description.subsubcategory}}</dd>
+				<br />
+			</div>
+			<div ng-show="description.filtro">
+				<dt>Filtro</dt>
+				<dd>{{description.filtro}}</dd>
+				<br />
+			</div>
+			<div ng-show="description.definition">
+				<dt>Definition</dt>
+				<dd>{{description.definition}}</dd>
+				<br />
+			</div>
+
+			<div ng-show="description.objective">
+				<dt>Objective</dt>
+				<dd>{{description.objective}}</dd>
+				<br />
+			</div>
+
+			<div>
+				<dt>Chart type</dt>
+				<dd>
+					<select class="form-control" ng-model="displayType"
+						id="displayType" ng-change="update()">
+						<option ng-repeat="t in displayTypes">{{t}}</option>
+					</select>
+				</dd>
+			</div>
+			<br />
+			<div>
+				<dt>From</dt>
+				<dd>
+					<select class="form-control" ng-model="indicator.fromYear"
+						ng-change="update()">
+						<option ng-repeat="yr in fromYears"
+							ng-show="yr <= indicator.toYear">{{yr}}</option>
+					</select>
+				</dd>
+			</div>
+			<br />
+			<div>
+				<dt>To</dt>
+				<dd>
+					<select class="form-control" ng-model="indicator.toYear"
+						ng-change="update()">
+						<option ng-repeat="yr in toYears"
+							ng-show="yr >= indicator.fromYear">{{yr}}</option>
+					</select>
+				</dd>
+			</div>
+		</dl>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-xs-12">
+		<br />
+		<div google-chart chart="chartObject"
+			style="height: 400px; width: 90%; margin-left: auto; margin-right: auto;"></div>
+	</div>
+</div>

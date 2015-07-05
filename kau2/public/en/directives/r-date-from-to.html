@@ -1,0 +1,13 @@
+<div class="form-group form-group-sm">
+	<label for="fromYear">From&nbsp;</label> <select ng-model="from"
+		class="form-control" id="fromYear" ng-change="change();"
+		ng-options="yr as yr for yr in years | filterFromYears: to">
+	</select>
+</div>
+
+<div class="form-group form-group-sm">
+	<label for="toYear">To&nbsp;</label> <select ng-model="to" id="toYear"
+		class="form-control" ng-change="change();"
+		ng-options="yr for yr in years | filterToYears: from">
+	</select>
+</div>

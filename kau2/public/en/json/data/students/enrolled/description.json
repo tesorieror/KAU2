@@ -1,0 +1,85 @@
+{"Gender":{"Male":{
+		"title" : "Enrolled Students (Males)",
+		"category" : "Students",
+		"subcategory" : "Enrolled",
+		"objective" : "Total number of Enrolled Male Students in tertiary programmes (ISCED 5A or 5B) regardless of age, in a given school year,  in all private and public educational institutions"
+	},"Female":{
+		"title" : "Enrolled Students (Females)",
+		"category" : "Students",
+		"subcategory" : "Enrolled",
+		"objective" : "Total number of Enrolled Female Students in tertiary programmes (ISCED 5A or 5B) regardless of age, in a given school year,  in all private and public educational institutions"
+	},"Total":{
+		"title" : "Total Enrolled Students",
+		"category" : "Students",
+		"subcategory" : "Enrolled",
+		"objective" : "Total number of Enrolled Students  in tertiary programmes (ISCED 5A or 5B) regardless of age, in a given school year,  in all private and public educational institutions"
+	}},
+	"Nationality":{
+		"Saudi":{"Male":{
+			"title" : "Enrolled Students (Saudi Males)",
+			"category" : "Students",
+			"subcategory" : "Enrolled",
+			"objective" : "Total number of Saudi Males Enrolled Students in tertiary programmes (ISCED 5A or 5B) regardless of age, in a given school year,  in all private and public educational institutions"
+		},"Female":{
+			"title" : "Total Enrolled Students (Saudi Females)",
+			"category" : "Students",
+			"subcategory" : "Enrolled",
+			"objective" : "Total number of Saudi Female Enrolled Students in tertiary programmes (ISCED 5A or 5B) regardless of age, in a given school year,  in all private and public educational institutions"
+		},"Total":{
+			"title" : "Total Enrolled Students (Saudi)",
+			"category" : "Students",
+			"subcategory" : "Enrolled",
+			"objective" : "Total number of Saudi Enrolled Students in tertiary programmes (ISCED 5A or 5B) regardless of age, in a given school year,  in all private and public educational institutions"
+		}},	
+		"Non-Saudi":{"Male":{
+			"title" : "Enrolled Students (Non-saudi Males)",
+			"category" : "Students",
+			"subcategory" : "Enrolled",
+			"objective" : "Total number of Enrolled Non-saudi Male Students in tertiary programmes (ISCED 5A or 5B) regardless of age, in a given school year,  in all private and public educational institutions"
+		},"Female":{
+			"title" : "Total Enrolled Students (Non-saudi Females)",
+			"category" : "Students",
+			"subcategory" : "Enrolled",
+			"objective" : "Total number of Enrolled  Non-saudi Female Students in tertiary programmes (ISCED 5A or 5B) regardless of age, in a given school year,  in all private and public educational institutions"
+		},"Total":{
+			"title" : "Total Enrolled Students (Non-saudi)",
+			"category" : "Students",
+			"subcategory" : "Enrolled",
+			"objective" : "Total number of Enrolled Non-saudi Students in tertiary programmes (ISCED 5A or 5B) regardless of age, in a given school year,  in all private and public educational institutions"
+		}}
+	},
+	"Degree":{
+		"Diploma":{"Male":{
+			"title" : "Male Enrolled Students (Diploma)",
+			"category" : "Students",
+			"subcategory" : "Enrolled",
+			"objective" : "Number of Enrolled Male Students in Diploma programmes, regardless of age, in a given school year,  in all private and public educational institutions"
+		},"Female":{
+			"title" : "Female Enrolled Students (Diploma)",
+			"category" : "Students",
+			"subcategory" : "Enrolled",
+			"objective" : "Number of Enrolled Female Students in Diploma programmes, regardless of age, in a given school year,  in all private and public educational institutions"
+		},"Total":{
+			"title" : "Total Enrolled Students (Diploma)",
+			"category" : "Students",
+			"subcategory" : "Enrolled",
+			"objective" : "Total number of Enrolled in Diploma programmes, regardless of age, in a given school year,  in all private and public educational institutions"
+		}},	
+		"Bachelore":{"Male":{
+			"title" : "Male Enrolled Students (Bachelore)",
+			"category" : "Students",
+			"subcategory" : "Enrolled",
+			"objective" : "Number of Enrolled Male Students in Bachelore programmes, regardless of age, in a given school year,  in all private and public educational institutions"
+		},"Female":{
+			"title" : "Female Enrolled Students (Bachelore)",
+			"category" : "Students",
+			"subcategory" : "Enrolled",
+			"objective" : "Number of Enrolled Female Students in Bachelore programmes, regardless of age, in a given school year,  in all private and public educational institutions"
+		},"Total":{
+			"title" : "Total Enrolled Students (Bachelore)",
+			"category" : "Students",
+			"subcategory" : "Enrolled",
+			"objective" : "Total number of Enrolled to Bachelore programmes, regardless of age, in a given school year,  in all private and public educational institutions"
+		}}
+	}
+}     

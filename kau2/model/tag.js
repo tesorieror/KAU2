@@ -13,7 +13,11 @@ var TagCategory = require(path.join(__dirname, 'tag-category'));
 var schema = mongoose.Schema({
 	name : String,
 	description : String,
-	_category : mongoose.Schema.Types.ObjectId
+	order : Number,
+	_category : {
+		type : mongoose.Schema.Types.ObjectId,
+		ref : TagCategory
+	}
 });
 
 var Tag;
@@ -31,15 +35,34 @@ schema.statics.promRemoveAll = function() {
 };
 
 schema.statics.promFindAll = function() {
+	// var deferred = q.defer();
+	// Tag.find(function(err, data) {
+	// if (err) {
+	// deferred.reject(err);
+	// } else {
+	// deferred.resolve(data);
+	// }
+	// });
+	// return deferred.promise;
+
 	var deferred = q.defer();
 	Tag.find(function(err, data) {
 		if (err) {
 			deferred.reject(err);
 		} else {
-			deferred.resolve(data);
+			TagCategory.populate(data, {
+				path : '_category'
+			}, function(err, data) {
+				if (err) {
+					deferred.reject(err);
+				} else {
+					deferred.resolve(data);
+				}
+			});
 		}
 	});
 	return deferred.promise;
+
 };
 
 schema.statics.promFindPlain = function(plainTag) {
@@ -65,7 +88,6 @@ schema.statics.promFindPlain = function(plainTag) {
 			deferred.resolve(data);
 		}
 	}
-
 
 	var deferred = q.defer();
 	TagCategory.promFindByName(plainTag.category)//

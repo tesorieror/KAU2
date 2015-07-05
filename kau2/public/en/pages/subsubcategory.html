@@ -1,0 +1,79 @@
+<div class="row">
+	<div class="col-xs-12">
+		<div ng-include="'./pages/main-nav.html'"></div>
+	</div>
+</div>
+<div class="row data">
+	<div class="col-xs-12">
+		<h2>{{title}}</h2>
+	</div>
+</div>
+<div class="row">
+	<div class="col-xs-12">
+		<ul class="nav nav-tabs" ng-show="activePath.toLowerCase().indexOf('/{{rootPathName}}/category/{{categoryName}}'.toLowerCase()) == 0">
+			<li ng-repeat="subcat in subcategoryNames" role="presentation"
+				ng-class="{active : activePath.toLowerCase().indexOf('/{{rootPathName}}/category/{{categoryName}}/subcategory/{{subcat.toLowerCase()}}'.toLowerCase()) == 0}"
+			>
+				<a href="#/{{rootPathName}}/category/{{categoryName}}/subcategory/{{subcat}}">{{subcat}}</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<div class="row">
+	<div class="col-xs-12">
+		<div class="panel panel-default kau-panel">
+			<div class="panel-header">
+				<ul class="nav nav-pills">
+					<li role="presentation" ng-repeat="subcat in subcategory.children"
+						ng-class="{active : activePath.indexOf('/{{rootPathName}}/category/{{categoryName}}/subcategory/{{subcategoryName}}/subsubcategory/{{subcat.name}}') == 0}"
+					>
+						<a href="#/{{rootPathName}}/category/{{categoryName}}/subcategory/{{subcategoryName}}/subsubcategory/{{subcat.name}}/">{{subcat.name}}</a>
+					</li>
+				</ul>
+			</div>
+			<div class="panel-header">
+				<div class="kau-check">
+					<div ng-repeat="subcat in subsubcategory.children">
+						<input type="checkbox" ng-change="chartRefresh()" ng-model="filter[subcat.name]">
+						<a data-ng-show="subcat.children.length>0"
+							href="#/{{rootPathName}}/category/{{categoryName}}/subcategory/{{subcategoryName}}/subsubcategory/{{subsubcategoryName}}/subsubsubcategory/{{subcat.name}}"
+						>{{subcat.name}}</a>
+						<span data-ng-show="subcat.children.length==0">{{subcat.name}}</span>
+					</div>
+				</div>
+			</div>
+			<div class="panel-header">
+				<form class="form-inline kau">
+					<div class="form-group form-group-sm">
+						<label for="fromYear">From&nbsp;</label> <select ng-model="from" class="form-control" id="fromYear" ng-change="periodChanged()"
+							ng-options="yr as yr for yr in years | filterFromYears: to"
+						>
+						</select>
+					</div>
+					<div class="form-group form-group-sm">
+						<label for="toYear">To&nbsp;</label> <select ng-model="to" id="toYear" class="form-control" ng-change="periodChanged()"
+							ng-options="yr for yr in years | filterToYears: from"
+						>
+						</select>
+					</div>
+					<div class="form-group form-group-sm">
+						<label for="chartType">Chart Type&nbsp;</label> <select ng-model="selectedChartType" id="chartType" class="form-control" ng-change="chartTypeChanged()"
+							ng-options="chType.name for chType in chartType"
+						>
+						</select>
+					</div>
+				</form>
+			</div>
+			<div class="panel-body">
+				<!-- Column Bar Chart -->
+				<div class="row">
+					<div class="col-xs-12">
+						<div google-chart chart="chart" on-ready="chartReady(chartWrapper)" on-select="chartSelectedItem(selectedItem)" on-click="chartClicked(chart)"
+							style="width: 700px; height: 450px;"
+						></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

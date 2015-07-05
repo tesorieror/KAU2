@@ -1,0 +1,87 @@
+{
+	"Gender":{
+		"Male" : 34678,
+		"Female" : 8128,
+		"Total" : 42806
+	},
+	"Scholarships" : {
+		"Male" : 22239,
+		"Female" : 5348,
+		"Total" : 27587
+	},
+	"Own experience" : {
+		"Male" : 12439,
+		"Female" : 2780,
+		"Total" : 15219
+	},	
+	"Degree":{
+		"Bachelore" : {
+			"Male" : 20257,
+			"Female" : 3428,
+			"Total" : 23685
+		},	
+		"Master" : {
+			"Male" : 8129,
+			"Female" : 2683,
+			"Total" : 10802
+		},
+		"PhD" : {
+			"Male" : 1494,
+			"Female" : 502,
+			"Total" : 1996
+		},
+		"Fellowship" : {
+			"Male" : 812,
+			"Female" : 209,
+			"Total" : 1021
+		},
+		"Other levels" : {
+			"Male" : 3986,
+			"Female" : 1306,
+			"Total" : 5292
+		}
+	},
+	"Student Spose": 0,
+	"Field":{
+		"Education" : {
+			"Male" : 417,
+			"Female" : 418,
+			"Total" : 835
+		},
+		"Humanities and Arts" : {
+			"Male" : 800,
+			"Female" : 781,
+			"Total" : 1581
+		},
+		"Social Sciences, Business and Law" : {
+			"Male" : 11581,
+			"Female" : 2457,
+			"Total" : 14038
+		},
+		"Science" : {
+			"Male" : 7436,
+			"Female" : 1737,
+			"Total" : 9173
+		},
+		"Engineering, Manufacturing Industries and Construction" : {
+			"Male" : 7714,
+			"Female" : 235,
+			"Total" : 7949
+		},
+		"Agriculture" : {
+			"Male" : 36,
+			"Female" : 0,
+			"Total" : 36
+		},
+		"Health and Social Services" : {
+			"Male" : 5272,
+			"Female" : 2216,
+			"Total" : 7488
+		},
+		"Not known programmes" : {
+			"Male" : 1422,
+			"Female" : 284,
+			"Total" : 1706
+		}
+	}
+}

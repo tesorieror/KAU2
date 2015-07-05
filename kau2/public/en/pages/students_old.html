@@ -1,0 +1,183 @@
+<div class="row">
+	<div class="col-xs-12">
+		<img src="./img/about-unit.jpg" style="width: 100%" />
+	</div>
+</div>
+
+<div class="row ">
+	<div class="col-xs-12">
+		<form>
+			<div class="row" style="margin-top: 5px; margin-bottom: 10px">
+				<div class="col-xs-12">
+					<div class="btn-group btn-group-xs" role="group">
+						<label class="btn btn-success"
+							ng-model="categoryService.categoryPathSelection"
+							ng-click="categoryService.selectCategory(c);updateChart();"
+							ng-repeat="c in categoryService.categoryPath" btn-radio="c">{{c.name}}</label>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+
+<!--  
+<div class="row about-unit">
+	<div class="col-xs-12">
+		<h2>Student data</h2>
+	</div>
+</div>
+-->
+<div class="row ">
+	<div class="col-xs-12" style="margin-bottom: 10px">
+		<form>
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="btn-group btn-group-sm" role="group">
+						<label class="btn btn-success"
+							ng-model="categoryService.subcategorySelection"
+							ng-click="categoryService.selectSubcategory(c); updateChart();"
+							ng-show="c.children.length>0" ng-hide="c.children.length==0"
+							ng-repeat="c in categoryService.subcategories" btn-radio="c">{{c.name}}</label>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+
+
+<!-- 
+
+<div class="row ">
+	<div class="col-xs-12">
+		<div class="panel panel-default">
+			<div class="panel-body"> 
+				<form>
+					<div class="row" style="margin-bottom: 5px;">
+						<div class="col-xs-12">
+							<div class="btn-group btn-group-xs" role="group">
+								<label class="btn btn-default" ng-model="categoryPathSelection"
+									ng-click="categoryPathClicked(c); updateChart()"
+									ng-repeat="c in categoryPath" btn-radio="c">{{c.name}}</label>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="btn-group btn-group-sm" role="group">
+								<label class="btn btn-default" ng-model="subcategorySelection"
+									ng-click="subcategoryClicked(c); updateChart()"
+									ng-repeat="c in subcategories" btn-radio="c">{{c.name}}</label>
+							</div>
+						</div>
+					</div>
+				</form>
+ 			</div>
+		</div>  
+	</div>
+</div>
+
+-->
+
+
+<div class="row" ng-show="categoryService.categoryPath.length > 1">
+	<div class="col-xs-12">
+		<div class="panel panel-success">
+			<div class="panel-heading">{{dataTitle}}</div>
+
+			<div class="panel-body">
+				<div class="row ">
+					<div class="col-xs-12">
+						<div class="panel panel-success">
+							<div class="panel-body">
+								<form class="form-inline">
+									<r-date-from-to from-change="updateChart()"
+										to-change="updateChart()"></r-date-from-to>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Table Chart -->
+
+				<div class="row" ng-show="categoryService.categoryPath.length==2">
+					<div class="col-xs-12">
+						<div class="panel panel-success">
+							<div class="panel-body">
+								<form class="form-horizontal">
+									<div class="form-group form-group-sm"
+										style="margin-bottom: 0px">
+										<label class="col-xs-1 control-label" for="searchString">Search</label>
+										<div class="col-xs-11">
+											<input class="form-control" id="searchString" type="text"
+												ng-model="searchString" placeholder="Filter"
+												ng-change="updateChart()" />
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Column Chart -->
+
+				<div class="row" ng-show="categoryService.categoryPath.length==3">
+					<div class="col-xs-12">
+						<div class="panel panel-success">
+							<div class="panel-body">
+								<form class="form-inline">
+									<div class="checkbox"
+										ng-repeat="c in categoryService.subcategories">
+										<label class="checkbox"><input type="checkbox"
+											ng-change="updateChart()"
+											ng-model="categoryService.chartFilter[c.name]">
+											{{c.name}}&nbsp; </label>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<!-- Line Chart -->
+
+				<div class="row" ng-show="categoryService.categoryPath.length==4">
+					<div class="col-xs-12">
+						<div class="panel panel-success">
+							<div class="panel-body">
+								<form class="form-inline">
+									<div class="checkbox"
+										ng-repeat="c in categoryService.subcategories">
+										<label class="checkbox"><input type="checkbox"
+											ng-change="updateChart()"
+											ng-model="categoryService.chartFilter[c.name]">
+											{{c.name}}&nbsp; </label>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="panel panel-success">
+							<div class="panel-body">
+								<div google-chart chart="chart"
+									on-ready="chartReady(chartWrapper)"
+									on-select="selected(selectedItem)" on-click="clicked(chart)"
+									style="width: 700px; height: 450px;"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+

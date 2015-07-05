@@ -1,0 +1,85 @@
+{"Gender":{"Male":{
+		"title" : "Freshmen Students (Males)",
+		"category" : "Students",
+		"subcategory" : "Freshmen",
+		"objective" : "Total number of Freshmen Male Students in tertiary programmes (ISCED 5A or 5B) regardless of age, in a given school year,  in all private and public educational institutions"
+	},"Female":{
+		"title" : "Freshmen Students (Females)",
+		"category" : "Students",
+		"subcategory" : "Freshmen",
+		"objective" : "Total number of Freshmen Female Students in tertiary programmes (ISCED 5A or 5B) regardless of age, in a given school year,  in all private and public educational institutions"
+	},"Total":{
+		"title" : "Total Freshmen Students",
+		"category" : "Students",
+		"subcategory" : "Freshmen",
+		"objective" : "Total number of Freshmen Students  in tertiary programmes (ISCED 5A or 5B) regardless of age, in a given school year,  in all private and public educational institutions"
+	}},
+	"Nationality":{
+		"Saudi":{"Male":{
+			"title" : "Freshmen Students (Saudi Males)",
+			"category" : "Students",
+			"subcategory" : "Freshmen",
+			"objective" : "Total number of Saudi Males Freshmen Students in tertiary programmes (ISCED 5A or 5B) regardless of age, in a given school year,  in all private and public educational institutions"
+		},"Female":{
+			"title" : "Total Freshmen Students (Saudi Females)",
+			"category" : "Students",
+			"subcategory" : "Freshmen",
+			"objective" : "Total number of Saudi Female Freshmen Students in tertiary programmes (ISCED 5A or 5B) regardless of age, in a given school year,  in all private and public educational institutions"
+		},"Total":{
+			"title" : "Total Freshmen Students (Saudi)",
+			"category" : "Students",
+			"subcategory" : "Freshmen",
+			"objective" : "Total number of Saudi Freshmen Students in tertiary programmes (ISCED 5A or 5B) regardless of age, in a given school year,  in all private and public educational institutions"
+		}},	
+		"Non-Saudi":{"Male":{
+			"title" : "Freshmen Students (Non-saudi Males)",
+			"category" : "Students",
+			"subcategory" : "Freshmen",
+			"objective" : "Total number of Freshmen Non-saudi Male Students in tertiary programmes (ISCED 5A or 5B) regardless of age, in a given school year,  in all private and public educational institutions"
+		},"Female":{
+			"title" : "Total Freshmen Students (Non-saudi Females)",
+			"category" : "Students",
+			"subcategory" : "Freshmen",
+			"objective" : "Total number of Freshmen  Non-saudi Female Students in tertiary programmes (ISCED 5A or 5B) regardless of age, in a given school year,  in all private and public educational institutions"
+		},"Total":{
+			"title" : "Total Freshmen Students (Non-saudi)",
+			"category" : "Students",
+			"subcategory" : "Freshmen",
+			"objective" : "Total number of Freshmen Non-saudi Students in tertiary programmes (ISCED 5A or 5B) regardless of age, in a given school year,  in all private and public educational institutions"
+		}}
+	},
+	"Degree":{
+		"Diploma":{"Male":{
+			"title" : "Male Freshmen Students (Diploma)",
+			"category" : "Students",
+			"subcategory" : "Freshmen",
+			"objective" : "Number of Freshmen Male Students in Diploma programmes, regardless of age, in a given school year,  in all private and public educational institutions"
+		},"Female":{
+			"title" : "Female Freshmen Students (Diploma)",
+			"category" : "Students",
+			"subcategory" : "Freshmen",
+			"objective" : "Number of Freshmen Female Students in Diploma programmes, regardless of age, in a given school year,  in all private and public educational institutions"
+		},"Total":{
+			"title" : "Total Freshmen Students (Diploma)",
+			"category" : "Students",
+			"subcategory" : "Freshmen",
+			"objective" : "Total number of Freshmen in Diploma programmes, regardless of age, in a given school year,  in all private and public educational institutions"
+		}},	
+		"Bachelore":{"Male":{
+			"title" : "Male Freshmen Students (Bachelore)",
+			"category" : "Students",
+			"subcategory" : "Freshmen",
+			"objective" : "Number of Freshmen Male Students in Bachelore programmes, regardless of age, in a given school year,  in all private and public educational institutions"
+		},"Female":{
+			"title" : "Female Freshmen Students (Bachelore)",
+			"category" : "Students",
+			"subcategory" : "Freshmen",
+			"objective" : "Number of Freshmen Female Students in Bachelore programmes, regardless of age, in a given school year,  in all private and public educational institutions"
+		},"Total":{
+			"title" : "Total Freshmen Students (Bachelore)",
+			"category" : "Students",
+			"subcategory" : "Freshmen",
+			"objective" : "Total number of Freshmen to Bachelore programmes, regardless of age, in a given school year,  in all private and public educational institutions"
+		}}
+	}
+}     

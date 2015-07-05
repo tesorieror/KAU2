@@ -1,0 +1,85 @@
+{"Gender":{"Male":{
+		"title" : "Graduated Students (Males)",
+		"category" : "Students",
+		"subcategory" : "Graduated",
+		"objective" : "Total number of Graduated Male Students in tertiary programmes (ISCED 5A or 5B) regardless of age, in a given school year,  in all private and public educational institutions"
+	},"Female":{
+		"title" : "Graduated Students (Females)",
+		"category" : "Students",
+		"subcategory" : "Graduated",
+		"objective" : "Total number of Graduated Female Students in tertiary programmes (ISCED 5A or 5B) regardless of age, in a given school year,  in all private and public educational institutions"
+	},"Total":{
+		"title" : "Total Graduated Students",
+		"category" : "Students",
+		"subcategory" : "Graduated",
+		"objective" : "Total number of Graduated Students  in tertiary programmes (ISCED 5A or 5B) regardless of age, in a given school year,  in all private and public educational institutions"
+	}},
+	"Nationality":{
+		"Saudi":{"Male":{
+			"title" : "Graduated Students (Saudi Males)",
+			"category" : "Students",
+			"subcategory" : "Graduated",
+			"objective" : "Total number of Saudi Males Graduated Students in tertiary programmes (ISCED 5A or 5B) regardless of age, in a given school year,  in all private and public educational institutions"
+		},"Female":{
+			"title" : "Total Graduated Students (Saudi Females)",
+			"category" : "Students",
+			"subcategory" : "Graduated",
+			"objective" : "Total number of Saudi Female Graduated Students in tertiary programmes (ISCED 5A or 5B) regardless of age, in a given school year,  in all private and public educational institutions"
+		},"Total":{
+			"title" : "Total Graduated Students (Saudi)",
+			"category" : "Students",
+			"subcategory" : "Graduated",
+			"objective" : "Total number of Saudi Graduated Students in tertiary programmes (ISCED 5A or 5B) regardless of age, in a given school year,  in all private and public educational institutions"
+		}},	
+		"Non-Saudi":{"Male":{
+			"title" : "Graduated Students (Non-saudi Males)",
+			"category" : "Students",
+			"subcategory" : "Graduated",
+			"objective" : "Total number of Graduated Non-saudi Male Students in tertiary programmes (ISCED 5A or 5B) regardless of age, in a given school year,  in all private and public educational institutions"
+		},"Female":{
+			"title" : "Total Graduated Students (Non-saudi Females)",
+			"category" : "Students",
+			"subcategory" : "Graduated",
+			"objective" : "Total number of Graduated  Non-saudi Female Students in tertiary programmes (ISCED 5A or 5B) regardless of age, in a given school year,  in all private and public educational institutions"
+		},"Total":{
+			"title" : "Total Graduated Students (Non-saudi)",
+			"category" : "Students",
+			"subcategory" : "Graduated",
+			"objective" : "Total number of Graduated Non-saudi Students in tertiary programmes (ISCED 5A or 5B) regardless of age, in a given school year,  in all private and public educational institutions"
+		}}
+	},
+	"Degree":{
+		"Diploma":{"Male":{
+			"title" : "Male Graduated Students (Diploma)",
+			"category" : "Students",
+			"subcategory" : "Graduated",
+			"objective" : "Number of Graduated Male Students in Diploma programmes, regardless of age, in a given school year,  in all private and public educational institutions"
+		},"Female":{
+			"title" : "Female Graduated Students (Diploma)",
+			"category" : "Students",
+			"subcategory" : "Graduated",
+			"objective" : "Number of Graduated Female Students in Diploma programmes, regardless of age, in a given school year,  in all private and public educational institutions"
+		},"Total":{
+			"title" : "Total Graduated Students (Diploma)",
+			"category" : "Students",
+			"subcategory" : "Graduated",
+			"objective" : "Total number of Graduated in Diploma programmes, regardless of age, in a given school year,  in all private and public educational institutions"
+		}},	
+		"Bachelore":{"Male":{
+			"title" : "Male Graduated Students (Bachelore)",
+			"category" : "Students",
+			"subcategory" : "Graduated",
+			"objective" : "Number of Graduated Male Students in Bachelore programmes, regardless of age, in a given school year,  in all private and public educational institutions"
+		},"Female":{
+			"title" : "Female Graduated Students (Bachelore)",
+			"category" : "Students",
+			"subcategory" : "Graduated",
+			"objective" : "Number of Graduated Female Students in Bachelore programmes, regardless of age, in a given school year,  in all private and public educational institutions"
+		},"Total":{
+			"title" : "Total Graduated Students (Bachelore)",
+			"category" : "Students",
+			"subcategory" : "Graduated",
+			"objective" : "Total number of Graduated to Bachelore programmes, regardless of age, in a given school year,  in all private and public educational institutions"
+		}}
+	}
+}     

@@ -17,6 +17,7 @@ var resetTagCategory = require('./routes/tagCategory/reset');
 var removeAllTagCategory = require('./routes/tagCategory/removeAll');
 var findAllTagCategory = require('./routes/tagCategory/findAll');
 var insertAllTagCategory = require('./routes/tagCategory/insertAll');
+var findByNameTagCategory = require('./routes/tagCategory/findByName');
 
 // Tag
 var resetTag = require('./routes/tag/reset');
@@ -24,14 +25,16 @@ var removeAllTag = require('./routes/tag/removeAll');
 var findAllTag = require('./routes/tag/findAll');
 var insertAllTag = require('./routes/tag/insertAll');
 var findPlainTag = require('./routes/tag/findPlain');
+var findByCategoryTag = require('./routes/tag/findByCategory');
 
-//Indicator
+// Indicator
 var resetIndicator = require('./routes/indicator/reset');
 var removeAllIndicator = require('./routes/indicator/removeAll');
 var findAllIndicator = require('./routes/indicator/findAll');
 var insertAllIndicator = require('./routes/indicator/insertAll');
 var findPlainIndicator = require('./routes/indicator/findPlain');
 var insertPlainIndicator = require('./routes/indicator/insertPlain');
+var findByTagsIndicator = require('./routes/indicator/findByTags');
 
 var app = express();
 
@@ -64,6 +67,7 @@ app.use('/tagCategory/reset', resetTagCategory);
 app.use('/tagCategory/removeAll', removeAllTagCategory);
 app.use('/tagCategory/findAll', findAllTagCategory);
 app.use('/tagCategory/insertAll', insertAllTagCategory);
+app.use('/', findByNameTagCategory);
 
 // Tag
 app.use('/tag/reset', resetTag);
@@ -71,16 +75,16 @@ app.use('/tag/removeAll', removeAllTag);
 app.use('/tag/findAll', findAllTag);
 app.use('/tag/findPlain', findPlainTag);
 app.use('/tag/insertAll', insertAllTag);
+app.use('/', findByCategoryTag);
 
-
-//Indicator
+// Indicator
 app.use('/indicator/reset', resetIndicator);
 app.use('/indicator/removeAll', removeAllIndicator);
 app.use('/indicator/findAll', findAllIndicator);
 app.use('/indicator/findPlain', findPlainIndicator);
 app.use('/indicator/insertAll', insertAllIndicator);
 app.use('/indicator/insertPlain', insertPlainIndicator);
-
+app.use('/', findByTagsIndicator);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

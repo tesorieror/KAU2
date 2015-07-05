@@ -1,0 +1,13 @@
+<div class="r-highlight" ng-controller="RHighlightCtrl">
+	<a ng-click="data.click(createClickEvent('div'))">
+		<h3 ng-show="data.title" ng-click="data.click(createClickEvent('title'))">
+			<span class="glyphicon glyphicon-arrow-up" ng-show="data.arrow == 'up'" style="color:green;"></span>
+			<span class="glyphicon glyphicon-arrow-down" ng-show="data.arrow == 'down'" style="color:red;"></span>
+			&nbsp;{{data.title}}
+		</h3>
+		<h4 ng-show="data.subtitle1" ng-click="data.click(createClickEvent('subtitle1'))">{{data.subtitle1}}</h4>
+		<h4 ng-show="data.subtitle2" ng-click="data.click(createClickEvent('subtitle2'))">{{data.subtitle2}}</h4>
+		<p ng-show="data.description" ng-click="data.click(createClickEvent('description'))">{{data.description}}</p>
+	</a>
+</div>
+

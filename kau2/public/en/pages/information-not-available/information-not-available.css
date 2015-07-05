@@ -1,0 +1,41 @@
+/**
+* Information not Available yet
+*/
+div.information-not-available {
+	
+}
+
+div.information-not-available div blockquote {
+	/*border-left-color: #61210B;*/
+	border-left-color: grey;
+}
+
+div.information-not-available h2 {
+	font-family: 'Lato', sans-serif;
+	font-style: bold;
+	font-weight: 900;
+	margin-top: 60px;
+	margin-bottom: 40px;
+	/*color: #61210B;*/
+	color: grey;
+	text-align: center;
+}
+
+div.information-not-available h3 {
+	font-family: 'Lato', sans-serif;
+	font-style: bold;
+	font-weight: 900;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	/*color: #61210B;*/
+	color: lightgrey;
+	text-align: center;
+}
+
+div.information-not-available p {
+	font-family: 'Lato', sans-serif;
+	font-style: normal;
+	text-align: justify;
+	text-justify: inter-word;
+	margin: 10px;
+}

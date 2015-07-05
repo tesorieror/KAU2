@@ -1,0 +1,104 @@
+{
+	"Gender":{
+		"Male" : 0,
+		"Female" : 0,
+		"Total" : 757770
+	},
+	"Nationality":{
+		"Saudi" : {
+			"Male" : 331165,
+			"Female" : 406699,
+			"Total" : 737864
+		},
+		"Non-Saudi" : {
+			"Male" : 12172,
+			"Female" : 7734,
+			"Total" : 19906
+		}
+	},
+	"Degree":{	
+		"Diploma" : {
+			"Male" : 100346,
+			"Female" : 27039,
+			"Total" : 127385
+		},
+		"Bachelore" : {
+			"Male" : 232477,
+			"Female" : 381627,
+			"Total" : 614104
+		},
+		"Higher Diploma" : {
+			"Male" : 1816,
+			"Female" : 815,
+			"Total" : 2631
+		},
+		"Master" : {
+			"Male" : 7204,
+			"Female" : 4103,
+			"Total" : 11307
+		},
+		"PhD" : {
+			"Male" : 1494,
+			"Female" : 849,
+			"Total" : 2343
+		}
+	},
+	"Field":{		
+		"Education" : {
+			"Male" : 30673,
+			"Female" : 77504,
+			"Total" : 108177
+		},
+		"Humanities and Arts" : {
+			"Male" : 85452,
+			"Female" : 133262,
+			"Total" : 218714
+		},
+		"Social Sciences, Business and Law" : {
+			"Male" : 83012,
+			"Female" : 77360,
+			"Total" : 160372
+		},
+		"Science" : {
+			"Male" : 54376,
+			"Female" : 84436,
+			"Total" : 138812
+		},
+		"Engineering, Manufacturing Industries and Construction" : {
+			"Male" : 38159,
+			"Female" : 3819,
+			"Total" : 41978
+		},
+		"Agriculture" : {
+			"Male" : 3516,
+			"Female" : 21,
+			"Total" : 3537
+		},
+		"Health and Social Services" : {
+			"Male" : 28657,
+			"Female" : 29025,
+			"Total" : 57682
+		},
+		"Not known programmes" : {
+			"Male" : 19492,
+			"Female" : 9006,
+			"Total" : 28498
+		}
+	},
+	"Administrative Areas":{
+		"Riyad" : 261483,
+		"Makkah" : 168948,
+		"Jazan" : 37437,
+		"Eastern Province" : 82874,
+		"Asir": 51139,
+		"Al-Qassim": 43309,
+		"Ha'il":12570,
+		"Al-Madinah":43431,
+		"Al-Baha":16579,
+		"Northern Border": 8096,
+		"Tabuk":8049,
+		"Najran": 15378,
+		"Al-Jawf": 8479,
+		"Total" : 757770
+	}
+}

@@ -1,0 +1,86 @@
+{
+	"Teaching Staff Members":	{
+		"Gender":{
+			"Male": 	27488,	
+			"Female": 	14101,	
+			"Total": 41589	
+		},
+		"Nationality":{
+			"Saudi":{
+				"Male":16195,
+				"Female":9961,
+				"Total": 26156
+			},
+			"Non-Saudi":{
+				"Male":11293,
+				"Female":4140,
+				"Total": 15433				
+			}
+		},
+		"Administrative Areas":{
+			"Riyadh" : 9926,
+			"Mekkah" : 9725,
+			"Jazan" : 1993,
+			"Eastern Province" : 5861,
+			"Asir" : 2993,
+			"Al-Qassim" : 1981,
+			"Ha'il" : 1200,
+			"Almadinah" : 3654,
+			"Al Baha" : 829,
+			"Northern borders" : 686,
+			"Tabuk" : 1369,
+			"Najran" : 675,
+			"Aljawf" : 697
+		},
+		"Degree":{
+			"PhD":{
+				"Male": 13731,
+				"Female": 4661,
+				"Total": 18392
+			},
+			"Master":{
+				"Male": 4638,
+				"Female": 3221,
+				"Total": 7859
+			},
+			"Bachelore":{
+				"Male": 9119,
+				"Female": 6219,
+				"Total": 15338
+			},
+			"Other": 0
+		},
+		"Position":{
+			"Professor":{
+				"Male": 2082,
+				"Female": 253,
+				"Total": 2335
+			},
+			"Associate Professor":{
+				"Male": 2992,
+				"Female": 702,
+				"Total": 3694
+			},
+			"Assistant Professor":{
+				"Male": 3713,
+				"Female": -1,
+				"Total": 12324
+			},
+			"Lecturer":{
+				"Male": 4639,
+				"Female": 3220,
+				"Total": 7859
+			},
+			"Teaching Assistant":{
+				"Male": 7762,
+				"Female": 5720,
+				"Total": 13482
+			},
+			"Other Ranks":{
+				"Male": 1402,
+				"Female": 493,
+				"Total": 1895
+			}
+		}
+	}
+}

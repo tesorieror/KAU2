@@ -11,7 +11,10 @@ var Indicator = require(path.join(__dirname, 'indicator'));
 
 var schema = mongoose.Schema({
 	value : Number,
-	_tags : [ mongoose.Schema.Types.ObjectId ]
+	_tags : [ {
+		type : mongoose.Schema.Types.ObjectId,
+		ref : 'Tag'
+	} ]
 });
 
 var Indicator;
@@ -34,7 +37,19 @@ schema.statics.promFindAll = function() {
 		if (err) {
 			deferred.reject(err);
 		} else {
-			deferred.resolve(data);
+
+			Tag.populate(data, {
+				path : '_tags'
+			}, function(err, data) {
+				if (err) {
+					deferred.reject(err);
+				} else {
+					console.log("Indicators", data);
+					deferred.resolve(data);
+				}
+
+			});
+
 		}
 	});
 	return deferred.promise;

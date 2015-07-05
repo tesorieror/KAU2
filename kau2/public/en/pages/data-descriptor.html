@@ -1,0 +1,56 @@
+<div class="modal-header">
+	<h3 class="modal-title">{{title}}</h3>
+</div>
+<div class="modal-body" ng-show="!unavailable">
+	<dl class="dl-horizontal">
+		<dt ng-show="description.category">Category</dt>
+		<dd ng-show="description.category">{{description.category}}</dd>
+		<dt ng-show="description.subcategory">Subcategory</dt>
+		<dd ng-show="description.subcategory">{{description.subcategory}}</dd>
+		<dt ng-show="description.subsubcategory">Subsubcategory</dt>
+		<dd ng-show="description.subsubcategory">{{description.subsubcategory}}</dd>
+		<dt ng-show="description.filtro">Filtro</dt>
+		<dd ng-show="description.filtro">{{description.filtro}}</dd>
+		<dt ng-show="description.definition">Definition</dt>
+		<dd ng-show="description.definition">{{description.definition}}</dd>
+		<dt ng-show="description.objective">Objective</dt>
+		<dd ng-show="description.objective">{{description.objective}}</dd>
+		<dt>Chart type</dt>
+		<dd>
+			<select class="form-control" ng-model="chartType" id="chartType"
+				ng-change="chartRefresh()"
+				ng-options="cht as cht.label for cht in chartTypes"
+			>
+			</select>
+		</dd>
+		<dt>From</dt>
+		<dd>
+			<select ng-model="from" class="form-control" id="fromYear"
+				ng-change="periodChanged()"
+				ng-options="yr as yr for yr in years | filterFromYears: to"
+			>
+			</select>
+		</dd>
+		<dt>To</dt>
+		<dd>
+			<select ng-model="to" id="toYear" class="form-control"
+				ng-change="periodChanged()"
+				ng-options="yr for yr in years | filterToYears: from"
+			></select>
+		</dd>
+	</dl>
+	<div google-chart chart="chartObject"
+		style="height: 300px; margin-left: auto; margin-right: auto;"
+	></div>
+</div>
+<!-- Unavailable -->
+<div class="modal-body" ng-show="unavailable">
+	<h1>Information not available</h1>
+</div>
+<div class="modal-footer">
+	<!-- 
+	<button class="btn btn-primary" ng-click="ok()">OK</button>
+	<button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+ -->
+	<button class="btn btn-default" ng-click="close()">Close</button>
+</div>
